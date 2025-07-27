@@ -4,13 +4,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-<<<<<<< HEAD
 # Production build
 build/
 dist/
 
-=======
->>>>>>> 134aefcec3fffa949ac0a585aff49486e50e3b0f
 # Environment variables
 .env
 .env.local
@@ -18,14 +15,6 @@ dist/
 .env.test.local
 .env.production.local
 
-<<<<<<< HEAD
-=======
-# Build outputs
-build/
-dist/
-out/
-
->>>>>>> 134aefcec3fffa949ac0a585aff49486e50e3b0f
 # Logs
 logs
 *.log
@@ -61,40 +50,10 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-<<<<<<< HEAD
-=======
-# dotenv environment variables file
-.env
-
->>>>>>> 134aefcec3fffa949ac0a585aff49486e50e3b0f
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
 
-<<<<<<< HEAD
-=======
-# next.js build output
-.next
-
-# nuxt.js build output
-.nuxt
-
-# vuepress build output
-.vuepress/dist
-
-# Serverless directories
-.serverless
-
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-.dynamodb/
-
-# TernJS port file
-.tern-port
-
->>>>>>> 134aefcec3fffa949ac0a585aff49486e50e3b0f
 # IDE files
 .vscode/
 .idea/
