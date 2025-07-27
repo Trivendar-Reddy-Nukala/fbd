@@ -38,6 +38,12 @@ app.use(express.urlencoded({ extended: true }));
 // Initialize database tables
 createTables();
 
+const errorhandler = require('errorhandler');
+if (process.env.NODE_ENV === 'development') {
+  app.use(errorhandler());
+}
+
+
 // Health check route
 app.get('/health', (req, res) => {
   db.query('SELECT NOW() AS time', (err, result) => {
@@ -67,9 +73,9 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Financial Management API running at http://localhost:${PORT}`);
-  console.log(`📊 Health check: http://localhost:${PORT}/health`);
-  console.log(`🔐 Auth endpoints: http://localhost:${PORT}/auth`);
-  console.log(`💳 API endpoints: http://localhost:${PORT}/api`);
-  console.log(`👨‍💼 Admin endpoints: http://localhost:${PORT}/api/admin`);
+  console.log(` Financial Management API running at http://localhost:${PORT}`);
+  console.log(` Health check: http://localhost:${PORT}/health`);
+  console.log(` Auth endpoints: http://localhost:${PORT}/auth`);
+  console.log(` API endpoints: http://localhost:${PORT}/api`);
+  console.log(` Admin endpoints: http://localhost:${PORT}/api/admin`);
 });
